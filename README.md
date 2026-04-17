@@ -7,7 +7,7 @@ session management, fuzzy finding, LSP-ready, GitHub Copilot, and full vim/nvim
 key-binding parity. Built for developers who live in the terminal.
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/yannvr/nvim-config/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/hyperdrift-io/nvim-config/main/install.sh)
 ```
 
 ---
@@ -112,7 +112,7 @@ The `--remote` flag is optimised for bastion hosts and remote servers:
 
 ```bash
 # One-liner for a fresh server
-bash <(curl -fsSL https://raw.githubusercontent.com/yannvr/nvim-config/main/install.sh) --remote --yes
+bash <(curl -fsSL https://raw.githubusercontent.com/hyperdrift-io/nvim-config/main/install.sh) --remote --yes
 ```
 
 ---
