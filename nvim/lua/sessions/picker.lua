@@ -1,0 +1,1 @@
+/Users/yannvr/dotfiles/.config/nvim/lua/sessions/picker.lua

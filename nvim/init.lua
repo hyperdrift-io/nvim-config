@@ -1,0 +1,1 @@
+/Users/yannvr/dotfiles/.config/nvim/init.lua

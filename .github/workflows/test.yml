@@ -1,0 +1,46 @@
+name: Install tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  macos:
+    name: macOS install test
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install (nvim + vim, auto-yes)
+        run: bash install.sh --both --yes
+
+      - name: Smoke test
+        run: bash test/test-install-macos.sh
+
+  linux-ubuntu:
+    name: Ubuntu 24.04 install test
+    runs-on: ubuntu-latest
+    container: ubuntu:24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: apt-get update -qq && apt-get install -y -qq curl git sudo
+
+      - name: Smoke test
+        run: bash test/test-install-linux.sh
+
+  linux-alpine:
+    name: Alpine install test
+    runs-on: ubuntu-latest
+    container: alpine:3.20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: apk add --no-cache curl git sudo bash
+
+      - name: Smoke test
+        run: bash test/test-install-linux.sh
