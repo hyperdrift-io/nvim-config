@@ -22,7 +22,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/hyperdrift-io/nvim-config/ma
 | Fuzzy file/buffer/grep search | `telescope.nvim` + `fzf.vim` |
 | Completion + snippets | `nvim-cmp` + `LuaSnip` |
 | GitHub Copilot | `copilot.vim` |
-| Git UI | `vim-fugitive` + `neogit` + `diffview` |
+| Git UI | `neogit` + `diffview` |
 | Status bar | `vim-airline` |
 | Undo history tree | `vim-mundo` |
 | Auto-pairs, surround, easy-align | tpope suite |
