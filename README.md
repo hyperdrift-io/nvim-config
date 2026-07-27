@@ -2,6 +2,8 @@
 
 **Battle-tested vim/neovim setup. One command. Any machine.**
 
+In the Hyperdrift monorepo this repo lives at `tools/nvim-config` (developer tooling; deployable Next.js apps stay under `apps/`).
+
 A cross-platform installer for a production-grade vim and neovim configuration —
 session management, fuzzy finding, LSP-ready, GitHub Copilot, and full vim/nvim
 key-binding parity. Built for developers who live in the terminal.
